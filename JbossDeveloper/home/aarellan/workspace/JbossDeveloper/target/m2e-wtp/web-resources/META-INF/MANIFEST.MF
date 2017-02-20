@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Built-By: aarellan
+Build-Jdk: 1.8.0_111
+Created-By: Maven Integration for Eclipse
+Dependencies: com.google.guava,org.slf4j
+

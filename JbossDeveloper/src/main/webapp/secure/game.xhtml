@@ -1,0 +1,51 @@
+<HTML xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html">
+
+	<f:metadata>
+		<f:loadBundle var="myBundle" basename="com.languages.bundles.greetings"/>
+	</f:metadata>
+
+	<h:head>
+		<title>Game of Guess</title>
+	</h:head>
+
+	<h:body>
+		<h:messages globalOnly="true"/>
+		<h:form>
+			<h1>
+				<h:outputText value="#{myBundle.title}" />
+			</h1>
+			<br/>
+			<h:selectOneMenu  valueChangeListener="#{collector.updateLocale}" onchange="submit()">		
+				<f:selectItems value="#{collector.map}" var="maps" itemValue="#{maps.value}" itemLabel="#{maps.key}" />		
+			</h:selectOneMenu>
+		</h:form>
+		
+		<h:form rendered="#{gameManager.playing == false}">
+			<h:panelGrid columns="2">
+				<h:commandButton action="#{gameManager.startGame}" value="Start Game!" />
+			</h:panelGrid>
+		</h:form>
+		<h:form rendered="#{gameManager.playing == true}">
+			<h:panelGrid columns="2">
+				<h:outputLabel value="Current Points: " for="points"/>
+				<h:outputText id="points" value="#{gameManager.currentPoints}" />
+				
+				<h:outputLabel value="Word Left ;) : " for="wordLeft"/>
+				<h:outputText id="wordLeft" value="#{gameManager.gameToPlay.wordLeft}" />
+			
+				<h:outputLabel value="Insert your guess: " for="guess"/>		
+				<h:inputText id="guess" value="#{gameManager.wordGuess}" />
+				
+				<h:outputLabel value="Your guesses : " for="myGuesses"/>
+				<h:outputText id="myGuesses" value="#{gameManager.gameToPlay.givenWords}" />
+				
+				<h:commandButton action="#{gameManager.findWord}" value="Guess" />
+				<h:commandButton action="#{gameManager.backToCollector}" value="Back" />
+			</h:panelGrid>
+		</h:form>		
+	</h:body>
+	
+</HTML>

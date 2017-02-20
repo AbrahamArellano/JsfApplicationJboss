@@ -1,0 +1,44 @@
+<HTML xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html">
+
+	<f:metadata>
+		<f:loadBundle var="myBundle" basename="com.languages.bundles.greetings"/>
+	</f:metadata>
+
+	<h:head>
+		<title>Game of Guess</title>
+	</h:head>
+
+	<h:body>
+		<h:panelGrid columns="1">
+			<h:outputText value="Greeting using loadBundle: #{myBundle.greet}"/>
+			<h:outputText value="Greeting using faces-config: #{myGreet.greet}"/>
+		</h:panelGrid>
+		
+		<br/>
+		
+		<br/>
+		<h:form>
+			<h:panelGrid columns="3">
+				<h:outputLabel value="Insert current date (dd/MM/yyyy): " />
+				<h:inputText id="currDate" value="#{collector.currentDate}" onblur="submit()">
+					<f:convertDateTime type="date" pattern="dd/MM/yyyy" />
+				</h:inputText>
+				<h:message for="currDate" showSummary="false" showDetail="true"/>
+			
+				<h:outputLabel value="Select Locale: " />		
+				<h:selectOneMenu id="selectLocale" valueChangeListener="#{collector.updateLocale}" onchange="submit()">
+					<f:selectItems value="#{collector.map}"/>
+				</h:selectOneMenu>
+				<h:message for="selectLocale" showSummary="false" showDetail="true"/>
+				
+				<h:commandButton action="#{collector.toGame}" value="Lets Play" />
+				<h:commandButton action="#{collector.toConfiguration}" value="Configure" />
+				<h:commandLink action="#{login.logout()}" value="Logout" />
+			</h:panelGrid>
+		</h:form>		
+	</h:body>
+	
+</HTML>

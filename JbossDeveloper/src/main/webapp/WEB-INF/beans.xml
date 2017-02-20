@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<beans xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://jboss.org/schema/cdi/beans_1_0.xsd">
+ <alternatives>
+  <class>com.jbossdev.beans.WordGuess</class>
+  <stereotype>com.jbossdev.jpa.qualifiers.DataContext</stereotype>
+ </alternatives>
+ <decorators>
+  <class>com.jbossdev.decorator.GameDecorator</class>
+ </decorators>
+ <interceptors>
+  <class>com.jbossdev.interceptors.LoggerInterceptor</class>
+ </interceptors>
+</beans>

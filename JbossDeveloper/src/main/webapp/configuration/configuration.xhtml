@@ -1,0 +1,61 @@
+<HTML xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:rich="http://richfaces.org/rich"
+    xmlns:a4j="http://richfaces.org/a4j">
+
+	<f:metadata>
+		<f:loadBundle var="myBundle" basename="com.languages.bundles.greetings"/>
+	</f:metadata>
+
+	<h:head>
+		<title>Game of Guess Configuration</title>
+	</h:head>
+
+	<h:body>
+		<rich:panel id="panel" >
+			<h:form>
+
+				<rich:graphValidator id="gv" value="#{configuration}" >
+					<p>
+						<h:messages globalOnly="true"/>
+						<h:messages for="gv"/>
+					</p>
+				
+					<h:panelGrid columns="3">
+						<h:outputLabel for="name" value="Name: " />
+						<h:inputText id="name" value="#{configuration.name}">
+							<rich:validator/>
+						</h:inputText>
+						<h:message for="name"/>
+						
+						<h:outputLabel for="age" value="Age: " />
+						<h:inputText id="age" value="#{configuration.age}" />
+						<h:message for="age"/>
+						
+						<h:outputLabel for="income" value="Income: " />
+						<h:inputText id="income" value="#{configuration.income}">
+							<f:convertNumber currencySymbol="€" type="currency" />
+						</h:inputText>
+						<h:message for="income"/>
+						
+						<h:outputLabel for="points" value="Points: " />
+						<h:selectOneMenu id="points" value="#{configuration.points}">
+							<f:selectItems value="#{configuration.pointsOption}" var="opts">
+								<f:selectItem itemLabel="#{opts.key}" itemValue="#{opts.value}"/>
+							</f:selectItems>
+						</h:selectOneMenu>
+						<h:message for="points"/>
+						
+
+					</h:panelGrid>
+					<p>
+						<a4j:commandButton value="Save" execute="@form" action="#{configuration.saveConfiguration()}" render="panel"/>
+					</p>
+				</rich:graphValidator>
+			</h:form>
+		</rich:panel>
+	</h:body>
+	
+</HTML>

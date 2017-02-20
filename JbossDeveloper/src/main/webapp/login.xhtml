@@ -1,0 +1,26 @@
+<HTML xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html">
+
+	<h:head>
+		<title>Core Development</title>
+		
+	</h:head>
+
+	<h:body>
+		<h:outputText value="You have a problem with your login!" rendered="param[error]==true"/>
+	
+		<h:form>
+			<h:messages globalOnly="true"/>
+			<h:panelGrid columns="2">
+				<h:outputLabel value="User:" for="username"/>
+				<h:inputText id="username" value="#{credentials.name}" />
+				<h:outputLabel value="Password:" for="password" />
+				<h:inputSecret id="password" value="#{credentials.password}" />
+				<h:commandButton action="#{login.login()}" value="Login" />
+			</h:panelGrid>
+		</h:form>	
+	</h:body>
+	
+</HTML>
