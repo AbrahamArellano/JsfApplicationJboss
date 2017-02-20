@@ -14,6 +14,8 @@
 	</h:head>
 
 	<h:body>
+		<h2>Jboss Configuration</h2>
+		<br/>
 		<rich:panel id="panel" >
 			<h:form>
 
@@ -52,6 +54,7 @@
 					</h:panelGrid>
 					<p>
 						<a4j:commandButton value="Save" execute="@form" action="#{configuration.saveConfiguration()}" render="panel"/>
+						<h:commandButton action="/secure/data" value="Back" />
 					</p>
 				</rich:graphValidator>
 			</h:form>

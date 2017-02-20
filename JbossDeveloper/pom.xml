@@ -12,6 +12,9 @@
 			resources, i.e. build is platform dependent! -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<org.richfaces.bom.version>4.2.2.Final</org.richfaces.bom.version>
+	    <version.teiid>9.1.0.Final</version.teiid>
+	    <version.narayana>5.0.4.Final</version.narayana>
+	    <version.ironjacamar>1.0.30.Final</version.ironjacamar>		
 	</properties>
 
 	<dependencyManagement>
@@ -187,6 +190,81 @@
             <artifactId>arquillian-protocol-servlet</artifactId>
             <scope>test</scope>
         </dependency>        
+        
+        
+        <!-- TEIID Dependencies -->
+	    <dependency>
+	      <groupId>org.jboss.teiid</groupId>
+	      <artifactId>teiid-runtime</artifactId>
+	      <version>9.1.0.Final</version>
+	    </dependency>
+
+	    <dependency>
+	      <groupId>org.jboss.teiid</groupId>
+	      <artifactId>teiid-admin</artifactId>
+	      <version>9.1.0.Final</version>
+	    </dependency>
+	
+	    <dependency>
+	      <groupId>org.jboss.teiid.connectors</groupId>
+	      <artifactId>translator-object</artifactId>
+	      <version>9.1.0.Final</version>
+	    </dependency>        
+
+	    <dependency>
+	      <groupId>org.jboss.teiid.connectors</groupId>
+	      <artifactId>translator-jdbc</artifactId>
+	      <version>9.1.0.Final</version>
+	    </dependency>
+
+		<dependency>
+		    <groupId>org.jboss.teiid.connectors</groupId>
+		    <artifactId>translator-file</artifactId>
+		    <version>${version.teiid}</version>
+		</dependency>   
+		<dependency>
+		    <groupId>org.jboss.teiid.connectors</groupId>
+		    <artifactId>connector-file</artifactId>
+		    <version>${version.teiid}</version>
+		</dependency>       
+		
+		<dependency>
+		    <groupId>org.jboss.teiid.connectors</groupId>
+		    <artifactId>translator-jdbc</artifactId>
+		    <version>${version.teiid}</version>
+		</dependency>  
+
+    	<!--from caching example -->
+    	<dependency>
+            <groupId>org.jboss.narayana.jta</groupId>
+            <artifactId>narayana-jta</artifactId>
+            <version>${version.narayana}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.jboss.ironjacamar</groupId>
+            <artifactId>ironjacamar-jdbc</artifactId>
+            <version>${version.ironjacamar}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.jboss.ironjacamar</groupId>
+            <artifactId>ironjacamar-core-api</artifactId>
+            <version>${version.ironjacamar}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.jboss.ironjacamar</groupId>
+            <artifactId>ironjacamar-core-impl</artifactId>
+            <version>${version.ironjacamar}</version>
+            <exclusions>
+            	<exclusion>
+            		<groupId>org.picketbox</groupId>
+            		<artifactId>picketbox</artifactId>
+            	</exclusion>
+            </exclusions>
+        </dependency>
+        
     </dependencies>	
 
 	<build>

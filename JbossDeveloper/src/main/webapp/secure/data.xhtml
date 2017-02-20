@@ -12,6 +12,8 @@
 	</h:head>
 
 	<h:body>
+		<h2>Jboss Data Collector</h2>
+		<br/>
 		<h:panelGrid columns="1">
 			<h:outputText value="Greeting using loadBundle: #{myBundle.greet}"/>
 			<h:outputText value="Greeting using faces-config: #{myGreet.greet}"/>
@@ -34,10 +36,19 @@
 				</h:selectOneMenu>
 				<h:message for="selectLocale" showSummary="false" showDetail="true"/>
 				
-				<h:commandButton action="#{collector.toGame}" value="Lets Play" />
-				<h:commandButton action="#{collector.toConfiguration}" value="Configure" />
-				<h:commandLink action="#{login.logout()}" value="Logout" />
 			</h:panelGrid>
+			<br/>
+			<p>
+				<h:commandButton action="#{collector.toGame}" value="Lets Play" />
+				<br/>
+				<br/>
+				<h:commandButton action="#{collector.toConfiguration}" value="Configure" />
+				<br/>
+				<h:commandButton action="teiid" value="TEIID" />
+				<br/>
+				<br/>
+				<h:commandLink action="#{login.logout()}" value="Logout" />			
+			</p>
 		</h:form>		
 	</h:body>
 	

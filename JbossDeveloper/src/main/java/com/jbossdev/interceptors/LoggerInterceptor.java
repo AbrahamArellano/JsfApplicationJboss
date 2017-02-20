@@ -19,7 +19,9 @@ public class LoggerInterceptor {
 		Method method = ic.getMethod();
 		String simpleName = ic.getTarget().getClass().getSimpleName();
 		int endIndex = simpleName.indexOf('$');
-		simpleName = simpleName.substring(0, endIndex);
+		if (endIndex > 0) {
+			simpleName = simpleName.substring(0, endIndex);
+		}
 		String parameters = "";
 		parameters = extractParameters(ic, parameters);
 		 

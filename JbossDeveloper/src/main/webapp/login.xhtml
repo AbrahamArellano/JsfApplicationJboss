@@ -9,6 +9,9 @@
 	</h:head>
 
 	<h:body>
+		<h1>JBoss Web Application - Teiid Engine Integrated</h1>
+		<br/>
+		<br/>
 		<h:outputText value="You have a problem with your login!" rendered="param[error]==true"/>
 	
 		<h:form>
@@ -18,6 +21,8 @@
 				<h:inputText id="username" value="#{credentials.name}" />
 				<h:outputLabel value="Password:" for="password" />
 				<h:inputSecret id="password" value="#{credentials.password}" />
+				<br/>
+				<br/>
 				<h:commandButton action="#{login.login()}" value="Login" />
 			</h:panelGrid>
 		</h:form>	
