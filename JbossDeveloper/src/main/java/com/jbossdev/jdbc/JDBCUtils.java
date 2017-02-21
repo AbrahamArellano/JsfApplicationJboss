@@ -94,6 +94,50 @@ public class JDBCUtils {
 		System.out.println();
 	}
 
+	public static String executeGetString(Connection connection, String sql, boolean closeConn) throws Exception {
+
+		StringBuilder sb = new StringBuilder();
+		
+		System.out.println("SQL: " + sql); //$NON-NLS-1$
+		sb.append("SQL: " + sql + "\n");
+
+		Statement stmt = null;
+		ResultSet rs = null;
+
+		try {
+			stmt = connection.createStatement();
+			boolean hasResults = stmt.execute(sql);
+			if (hasResults) {
+				rs = stmt.getResultSet();
+				ResultSetMetaData metadata = rs.getMetaData();
+				int columns = metadata.getColumnCount();
+				for (int row = 1; rs.next(); row++) {
+					System.out.print(row + ": ");
+					sb.append(row + ": ");
+					for (int i = 0; i < columns; i++) {
+						if (i > 0) {
+							System.out.print(", ");
+							sb.append(", ");
+						}
+						System.out.print(rs.getObject(i + 1));
+						sb.append(rs.getObject(i + 1));
+					}
+					System.out.println();
+					sb.append("\n");
+				}
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			close(rs, stmt);
+			if (closeConn)
+				close(connection);
+		}
+		System.out.println();
+		return sb.toString();
+	}
+
+	
 	public static void executeQuery(Connection conn, String sql) throws SQLException {
 
 		System.out.println("Query SQL: " + sql); //$NON-NLS-1$
