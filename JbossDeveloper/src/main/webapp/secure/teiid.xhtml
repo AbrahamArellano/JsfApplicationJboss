@@ -22,8 +22,14 @@
 						<f:selectItem itemLabel="Basic vdb.xml" itemValue="objectVdb"/>
 						<f:selectItem itemLabel="Design vdb.xml Parameters" itemValue="visualDesignerVdbProcedureExecutionWithParameters"/>
 				</h:selectOneMenu>
+				
 				<h:outputLabel for="jobType" value="Job Type: " />
-				<h:inputText id="jobType" value="#{teiidExecutor.jobType}" />
+				<h:selectOneMenu id="jobType" value="#{teiidExecutor.jobType}">
+						<f:selectItem itemLabel="Kunstler" itemValue="Kunstler"/>
+						<f:selectItem itemLabel="Programmer" itemValue="Programmer"/>
+						<f:selectItem itemLabel="Schneider" itemValue="Schneider"/>
+				</h:selectOneMenu>				
+				
 				<h:commandButton action="#{teiidExecutor.executeDesignerFederatedView()}" value="Execute" />
 			</h:panelGrid>
 			<br/>

@@ -3,23 +3,18 @@ package com.jbossdev.view;
 import static com.jbossdev.jdbc.JDBCUtils.executeGetString;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
-import java.net.URL;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 
-import javax.annotation.PostConstruct;
 import javax.ejb.Stateful;
 import javax.enterprise.context.Conversation;
 import javax.enterprise.context.ConversationScoped;
-import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
 import javax.inject.Named;
 
 import org.teiid.deployers.VirtualDatabaseException;
 import org.teiid.dqp.internal.datamgr.ConnectorManagerRepository.ConnectorManagerException;
-import org.teiid.runtime.EmbeddedConfiguration;
 import org.teiid.runtime.EmbeddedServer;
 import org.teiid.translator.TranslatorException;
 
@@ -35,24 +30,12 @@ public class TeiidExecutor {
 	@Inject
 	private Conversation conversation;
 
-	@Produces
-	private static EmbeddedServer embeddedServer = new EmbeddedServer();
+	@Inject
+	private transient EmbeddedServer embeddedServer;
 
 	private String federatedView;
 	private String jobType;
 	private String result;
-
-	@PostConstruct
-	public void startUp() throws VirtualDatabaseException, ConnectorManagerException, TranslatorException, IOException,
-			URISyntaxException {
-		embeddedServer.start(new EmbeddedConfiguration());
-		embeddedServer.deployVDB(TeiidExecutor.class.getClassLoader().getResourceAsStream("object-vdb.xml"));
-		URL url = TeiidExecutor.class.getClassLoader().getResource("ProcedureFedView.vdb");
-		String rawPath = url.toURI().getRawPath();
-		rawPath = "file:" + rawPath;
-		URL newurl = new URL(rawPath);
-		embeddedServer.deployVDBZip(newurl);
-	}
 
 	@Logged
 	public void loadTeiidEngineSearch() {
@@ -93,9 +76,6 @@ public class TeiidExecutor {
 	}
 
 	public String stopAndBack() {
-		// embeddedServer.undeployVDB("objectExampleVDB");
-		embeddedServer.undeployVDB("PersonListFedView");
-		embeddedServer.stop();
 		conversation.end();
 		logger.info("Conversation ended");
 		return "/secure/data?faces-redirect=true";

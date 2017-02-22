@@ -234,6 +234,21 @@
 		    <artifactId>translator-jdbc</artifactId>
 		    <version>${version.teiid}</version>
 		</dependency>  
+		
+		<!-- TEIID - JPA integration -->
+		<dependency>
+		    <groupId>org.jboss.teiid</groupId>
+		    <artifactId>teiid-client</artifactId>
+		    <version>${version.teiid}</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.jboss.teiid</groupId>
+		    <artifactId>teiid-hibernate-dialect</artifactId>
+		    <version>${version.teiid}</version>
+		</dependency>
+		<!-- END TEIID -->
+		
 
     	<!--from caching example -->
     	<dependency>
