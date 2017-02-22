@@ -4,7 +4,7 @@
     xmlns:h="http://java.sun.com/jsf/html">
 
 	<f:metadata>
-		<f:event listener="#{teiidExecutor.executeTeiidEngineSearch}" type="preRenderComponent" />
+		<f:event listener="#{teiidExecutor.loadTeiidEngineSearch}" type="preRenderComponent" />
 	</f:metadata>
 
 	<h:head>
@@ -15,6 +15,24 @@
 		<h2>Jboss Data Virtualization</h2>
 		<br/>
 		
+		<h:form>
+			<h:panelGrid columns="2">
+				<h:outputLabel for="federatedView" value="VDB Execution: " />
+				<h:selectOneMenu id="federatedView" value="#{teiidExecutor.federatedView}">
+						<f:selectItem itemLabel="Basic vdb.xml" itemValue="objectVdb"/>
+						<f:selectItem itemLabel="Design vdb.xml Parameters" itemValue="visualDesignerVdbProcedureExecutionWithParameters"/>
+				</h:selectOneMenu>
+				<h:outputLabel for="jobType" value="Job Type: " />
+				<h:inputText id="jobType" value="#{teiidExecutor.jobType}" />
+				<h:commandButton action="#{teiidExecutor.executeDesignerFederatedView()}" value="Execute" />
+			</h:panelGrid>
+			<br/>
+			<br/>
+			<h:outputText value="#{teiidExecutor.result}" />
+			<br/>
+			<br/>
+			<h:commandButton action="#{teiidExecutor.stopAndBack()}" value="Back" />
+		</h:form>
 	</h:body>
 	
 </HTML>

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" output="target/classes" path="src/main/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
@@ -11,26 +17,500 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+	<classpathentry kind="var" path="M2_REPO/javax/enterprise/cdi-api/1.0-SP4/cdi-api-1.0-SP4.jar" sourcepath="M2_REPO/javax/enterprise/cdi-api/1.0-SP4/cdi-api-1.0-SP4-sources.jar">
 		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/javax/enterprise/cdi-api/1.0-SP4/cdi-api-1.0-SP4-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+	<classpathentry kind="var" path="M2_REPO/javax/inject/javax.inject/1/javax.inject-1.jar" sourcepath="M2_REPO/javax/inject/javax.inject/1/javax.inject-1-sources.jar">
 		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/javax/inject/javax.inject/1/javax.inject-1-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.jboss.ide.eclipse.as.core.server.runtime.runtimeTarget/JBoss EAP 6.1+ Runtime">
+	<classpathentry kind="var" path="M2_REPO/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar" sourcepath="M2_REPO/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-sources.jar">
 		<attributes>
-			<attribute name="owner.project.facets" value="jst.jsf;jpt.jpa;jst.web"/>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.1.Final/jboss-interceptors-api_1.1_spec-1.0.1.Final.jar" sourcepath="M2_REPO/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.1.Final/jboss-interceptors-api_1.1_spec-1.0.1.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.1.Final/jboss-interceptors-api_1.1_spec-1.0.1.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/spec/javax/annotation/jboss-annotations-api_1.1_spec/1.0.1.Final/jboss-annotations-api_1.1_spec-1.0.1.Final.jar" sourcepath="M2_REPO/org/jboss/spec/javax/annotation/jboss-annotations-api_1.1_spec/1.0.1.Final/jboss-annotations-api_1.1_spec-1.0.1.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/spec/javax/annotation/jboss-annotations-api_1.1_spec/1.0.1.Final/jboss-annotations-api_1.1_spec-1.0.1.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/spec/javax/servlet/jboss-servlet-api_3.0_spec/1.0.1.Final/jboss-servlet-api_3.0_spec-1.0.1.Final.jar" sourcepath="M2_REPO/org/jboss/spec/javax/servlet/jboss-servlet-api_3.0_spec/1.0.1.Final/jboss-servlet-api_3.0_spec-1.0.1.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/spec/javax/servlet/jboss-servlet-api_3.0_spec/1.0.1.Final/jboss-servlet-api_3.0_spec-1.0.1.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/spec/javax/faces/jboss-jsf-api_2.1_spec/2.0.2.Final/jboss-jsf-api_2.1_spec-2.0.2.Final.jar" sourcepath="M2_REPO/org/jboss/spec/javax/faces/jboss-jsf-api_2.1_spec/2.0.2.Final/jboss-jsf-api_2.1_spec-2.0.2.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/spec/javax/faces/jboss-jsf-api_2.1_spec/2.0.2.Final/jboss-jsf-api_2.1_spec-2.0.2.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/spec/javax/ejb/jboss-ejb-api_3.1_spec/1.0.2.Final/jboss-ejb-api_3.1_spec-1.0.2.Final.jar" sourcepath="M2_REPO/org/jboss/spec/javax/ejb/jboss-ejb-api_3.1_spec/1.0.2.Final/jboss-ejb-api_3.1_spec-1.0.2.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/spec/javax/ejb/jboss-ejb-api_3.1_spec/1.0.2.Final/jboss-ejb-api_3.1_spec-1.0.2.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/spec/javax/ws/rs/jboss-jaxrs-api_1.1_spec/1.0.0.Final/jboss-jaxrs-api_1.1_spec-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/spec/javax/ws/rs/jboss-jaxrs-api_1.1_spec/1.0.0.Final/jboss-jaxrs-api_1.1_spec-1.0.0.Final-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final.jar" sourcepath="M2_REPO/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.1.Final/hibernate-jpa-2.0-api-1.0.1.Final-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/spec/javax/jms/jboss-jms-api_1.1_spec/1.0.1.Final/jboss-jms-api_1.1_spec-1.0.1.Final.jar" sourcepath="M2_REPO/org/jboss/spec/javax/jms/jboss-jms-api_1.1_spec/1.0.1.Final/jboss-jms-api_1.1_spec-1.0.1.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/spec/javax/jms/jboss-jms-api_1.1_spec/1.0.1.Final/jboss-jms-api_1.1_spec-1.0.1.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/logging/jboss-logging/3.1.1.GA/jboss-logging-3.1.1.GA.jar" sourcepath="M2_REPO/org/jboss/logging/jboss-logging/3.1.1.GA/jboss-logging-3.1.1.GA-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final.jar" sourcepath="M2_REPO/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/google/guava/guava/11.0.2/guava-11.0.2.jar" sourcepath="M2_REPO/com/google/guava/guava/11.0.2/guava-11.0.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/com/google/guava/guava/11.0.2/guava-11.0.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/sourceforge/cssparser/cssparser/0.9.5/cssparser-0.9.5.jar" sourcepath="M2_REPO/net/sourceforge/cssparser/cssparser/0.9.5/cssparser-0.9.5-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/w3c/css/sac/1.3/sac-1.3.jar" sourcepath="M2_REPO/org/w3c/css/sac/1.3/sac-1.3-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/richfaces/core/richfaces-core-impl/4.2.2.Final/richfaces-core-impl-4.2.2.Final.jar" sourcepath="M2_REPO/org/richfaces/core/richfaces-core-impl/4.2.2.Final/richfaces-core-impl-4.2.2.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/richfaces/core/richfaces-core-impl/4.2.2.Final/richfaces-core-impl-4.2.2.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/richfaces/core/richfaces-core-api/4.2.2.Final/richfaces-core-api-4.2.2.Final.jar" sourcepath="M2_REPO/org/richfaces/core/richfaces-core-api/4.2.2.Final/richfaces-core-api-4.2.2.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/richfaces/core/richfaces-core-api/4.2.2.Final/richfaces-core-api-4.2.2.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/richfaces/ui/richfaces-components-ui/4.2.2.Final/richfaces-components-ui-4.2.2.Final.jar" sourcepath="M2_REPO/org/richfaces/ui/richfaces-components-ui/4.2.2.Final/richfaces-components-ui-4.2.2.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/richfaces/ui/richfaces-components-ui/4.2.2.Final/richfaces-components-ui-4.2.2.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/richfaces/ui/richfaces-components-api/4.2.2.Final/richfaces-components-api-4.2.2.Final.jar" sourcepath="M2_REPO/org/richfaces/ui/richfaces-components-api/4.2.2.Final/richfaces-components-api-4.2.2.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/richfaces/ui/richfaces-components-api/4.2.2.Final/richfaces-components-api-4.2.2.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/atmosphere/atmosphere-runtime/0.8.4/atmosphere-runtime-0.8.4.jar" sourcepath="M2_REPO/org/atmosphere/atmosphere-runtime/0.8.4/atmosphere-runtime-0.8.4-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/atmosphere/atmosphere-runtime/0.8.4/atmosphere-runtime-0.8.4-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/atmosphere/atmosphere-compat-jbossweb/0.8.4/atmosphere-compat-jbossweb-0.8.4.jar" sourcepath="M2_REPO/org/atmosphere/atmosphere-compat-jbossweb/0.8.4/atmosphere-compat-jbossweb-0.8.4-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/atmosphere/atmosphere-compat-jbossweb/0.8.4/atmosphere-compat-jbossweb-0.8.4-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/atmosphere/atmosphere-compat-tomcat/0.8.4/atmosphere-compat-tomcat-0.8.4.jar" sourcepath="M2_REPO/org/atmosphere/atmosphere-compat-tomcat/0.8.4/atmosphere-compat-tomcat-0.8.4-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/atmosphere/atmosphere-compat-tomcat/0.8.4/atmosphere-compat-tomcat-0.8.4-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/atmosphere/atmosphere-compat-weblogic/0.8.4/atmosphere-compat-weblogic-0.8.4.jar" sourcepath="M2_REPO/org/atmosphere/atmosphere-compat-weblogic/0.8.4/atmosphere-compat-weblogic-0.8.4-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/atmosphere/atmosphere-compat-weblogic/0.8.4/atmosphere-compat-weblogic-0.8.4-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/atmosphere/atmosphere-compat-tomcat7/0.8.4/atmosphere-compat-tomcat7-0.8.4.jar" sourcepath="M2_REPO/org/atmosphere/atmosphere-compat-tomcat7/0.8.4/atmosphere-compat-tomcat7-0.8.4-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/atmosphere/atmosphere-compat-tomcat7/0.8.4/atmosphere-compat-tomcat7-0.8.4-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/atmosphere/atmosphere-compat-jetty/0.8.4/atmosphere-compat-jetty-0.8.4.jar" sourcepath="M2_REPO/org/atmosphere/atmosphere-compat-jetty/0.8.4/atmosphere-compat-jetty-0.8.4-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/atmosphere/atmosphere-compat-jetty/0.8.4/atmosphere-compat-jetty-0.8.4-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/junit/junit/4.8.2/junit-4.8.2.jar" sourcepath="M2_REPO/junit/junit/4.8.2/junit-4.8.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/junit/junit/4.8.2/junit-4.8.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/arquillian/junit/arquillian-junit-container/1.0.0.Final/arquillian-junit-container-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/arquillian/junit/arquillian-junit-container/1.0.0.Final/arquillian-junit-container-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/arquillian/junit/arquillian-junit-container/1.0.0.Final/arquillian-junit-container-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/arquillian/junit/arquillian-junit-core/1.0.0.Final/arquillian-junit-core-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/arquillian/junit/arquillian-junit-core/1.0.0.Final/arquillian-junit-core-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/arquillian/junit/arquillian-junit-core/1.0.0.Final/arquillian-junit-core-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/arquillian/test/arquillian-test-spi/1.0.0.Final/arquillian-test-spi-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/arquillian/test/arquillian-test-spi/1.0.0.Final/arquillian-test-spi-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/arquillian/test/arquillian-test-spi/1.0.0.Final/arquillian-test-spi-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/arquillian/core/arquillian-core-spi/1.0.0.Final/arquillian-core-spi-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/arquillian/core/arquillian-core-spi/1.0.0.Final/arquillian-core-spi-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/arquillian/core/arquillian-core-spi/1.0.0.Final/arquillian-core-spi-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/arquillian/core/arquillian-core-api/1.0.0.Final/arquillian-core-api-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/arquillian/core/arquillian-core-api/1.0.0.Final/arquillian-core-api-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/arquillian/core/arquillian-core-api/1.0.0.Final/arquillian-core-api-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/arquillian/test/arquillian-test-api/1.0.0.Final/arquillian-test-api-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/arquillian/test/arquillian-test-api/1.0.0.Final/arquillian-test-api-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/arquillian/test/arquillian-test-api/1.0.0.Final/arquillian-test-api-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/shrinkwrap/shrinkwrap-api/1.0.0/shrinkwrap-api-1.0.0.jar" sourcepath="M2_REPO/org/jboss/shrinkwrap/shrinkwrap-api/1.0.0/shrinkwrap-api-1.0.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-api/1.0.0/shrinkwrap-api-1.0.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/arquillian/container/arquillian-container-test-api/1.0.0.Final/arquillian-container-test-api-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/arquillian/container/arquillian-container-test-api/1.0.0.Final/arquillian-container-test-api-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-api/1.0.0.Final/arquillian-container-test-api-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/arquillian/container/arquillian-container-test-spi/1.0.0.Final/arquillian-container-test-spi-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/arquillian/container/arquillian-container-test-spi/1.0.0.Final/arquillian-container-test-spi-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-spi/1.0.0.Final/arquillian-container-test-spi-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/arquillian/container/arquillian-container-spi/1.0.0.Final/arquillian-container-spi-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/arquillian/container/arquillian-container-spi/1.0.0.Final/arquillian-container-spi-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/arquillian/container/arquillian-container-spi/1.0.0.Final/arquillian-container-spi-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/arquillian/config/arquillian-config-api/1.0.0.Final/arquillian-config-api-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/arquillian/config/arquillian-config-api/1.0.0.Final/arquillian-config-api-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/arquillian/config/arquillian-config-api/1.0.0.Final/arquillian-config-api-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api-base/2.0.0-alpha-2/shrinkwrap-descriptors-api-base-2.0.0-alpha-2.jar" sourcepath="M2_REPO/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api-base/2.0.0-alpha-2/shrinkwrap-descriptors-api-base-2.0.0-alpha-2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-api-base/2.0.0-alpha-2/shrinkwrap-descriptors-api-base-2.0.0-alpha-2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/arquillian/config/arquillian-config-impl-base/1.0.0.Final/arquillian-config-impl-base-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/arquillian/config/arquillian-config-impl-base/1.0.0.Final/arquillian-config-impl-base-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/arquillian/config/arquillian-config-impl-base/1.0.0.Final/arquillian-config-impl-base-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-spi/2.0.0-alpha-2/shrinkwrap-descriptors-spi-2.0.0-alpha-2.jar" sourcepath="M2_REPO/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-spi/2.0.0-alpha-2/shrinkwrap-descriptors-spi-2.0.0-alpha-2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/shrinkwrap/descriptors/shrinkwrap-descriptors-spi/2.0.0-alpha-2/shrinkwrap-descriptors-spi-2.0.0-alpha-2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/arquillian/core/arquillian-core-impl-base/1.0.0.Final/arquillian-core-impl-base-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/arquillian/core/arquillian-core-impl-base/1.0.0.Final/arquillian-core-impl-base-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/arquillian/core/arquillian-core-impl-base/1.0.0.Final/arquillian-core-impl-base-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/arquillian/test/arquillian-test-impl-base/1.0.0.Final/arquillian-test-impl-base-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/arquillian/test/arquillian-test-impl-base/1.0.0.Final/arquillian-test-impl-base-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/arquillian/test/arquillian-test-impl-base/1.0.0.Final/arquillian-test-impl-base-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/arquillian/container/arquillian-container-impl-base/1.0.0.Final/arquillian-container-impl-base-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/arquillian/container/arquillian-container-impl-base/1.0.0.Final/arquillian-container-impl-base-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/arquillian/container/arquillian-container-impl-base/1.0.0.Final/arquillian-container-impl-base-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/arquillian/container/arquillian-container-test-impl-base/1.0.0.Final/arquillian-container-test-impl-base-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/arquillian/container/arquillian-container-test-impl-base/1.0.0.Final/arquillian-container-test-impl-base-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/arquillian/container/arquillian-container-test-impl-base/1.0.0.Final/arquillian-container-test-impl-base-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.0.0/shrinkwrap-impl-base-1.0.0.jar" sourcepath="M2_REPO/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.0.0/shrinkwrap-impl-base-1.0.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-impl-base/1.0.0/shrinkwrap-impl-base-1.0.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/shrinkwrap/shrinkwrap-spi/1.0.0/shrinkwrap-spi-1.0.0.jar" sourcepath="M2_REPO/org/jboss/shrinkwrap/shrinkwrap-spi/1.0.0/shrinkwrap-spi-1.0.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/shrinkwrap/shrinkwrap-spi/1.0.0/shrinkwrap-spi-1.0.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/teiid/teiid-runtime/9.1.0.Final/teiid-runtime-9.1.0.Final.jar" sourcepath="M2_REPO/org/jboss/teiid/teiid-runtime/9.1.0.Final/teiid-runtime-9.1.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/teiid/teiid-runtime/9.1.0.Final/teiid-runtime-9.1.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/teiid/teiid-common-core/9.1.0.Final/teiid-common-core-9.1.0.Final.jar" sourcepath="M2_REPO/org/jboss/teiid/teiid-common-core/9.1.0.Final/teiid-common-core-9.1.0.Final-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/teiid/teiid-metadata/9.1.0.Final/teiid-metadata-9.1.0.Final.jar" sourcepath="M2_REPO/org/jboss/teiid/teiid-metadata/9.1.0.Final/teiid-metadata-9.1.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/teiid/teiid-metadata/9.1.0.Final/teiid-metadata-9.1.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/teiid/teiid-engine/9.1.0.Final/teiid-engine-9.1.0.Final.jar" sourcepath="M2_REPO/org/jboss/teiid/teiid-engine/9.1.0.Final/teiid-engine-9.1.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/teiid/teiid-engine/9.1.0.Final/teiid-engine-9.1.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/teiid/teiid-api/9.1.0.Final/teiid-api-9.1.0.Final.jar" sourcepath="M2_REPO/org/jboss/teiid/teiid-api/9.1.0.Final/teiid-api-9.1.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/teiid/teiid-api/9.1.0.Final/teiid-api-9.1.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/teiid/teiid-client/9.1.0.Final/teiid-client-9.1.0.Final.jar" sourcepath="M2_REPO/org/jboss/teiid/teiid-client/9.1.0.Final/teiid-client-9.1.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/teiid/teiid-client/9.1.0.Final/teiid-client-9.1.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/modules/jboss-modules/1.5.1.Final/jboss-modules-1.5.1.Final.jar" sourcepath="M2_REPO/org/jboss/modules/jboss-modules/1.5.1.Final/jboss-modules-1.5.1.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/modules/jboss-modules/1.5.1.Final/jboss-modules-1.5.1.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/teiid/teiid-admin/9.1.0.Final/teiid-admin-9.1.0.Final.jar" sourcepath="M2_REPO/org/jboss/teiid/teiid-admin/9.1.0.Final/teiid-admin-9.1.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/teiid/teiid-admin/9.1.0.Final/teiid-admin-9.1.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/spec/javax/resource/jboss-connector-api_1.7_spec/1.0.0.Final/jboss-connector-api_1.7_spec-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/spec/javax/resource/jboss-connector-api_1.7_spec/1.0.0.Final/jboss-connector-api_1.7_spec-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/spec/javax/resource/jboss-connector-api_1.7_spec/1.0.0.Final/jboss-connector-api_1.7_spec-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/jboss-vfs/3.2.11.Final/jboss-vfs-3.2.11.Final.jar" sourcepath="M2_REPO/org/jboss/jboss-vfs/3.2.11.Final/jboss-vfs-3.2.11.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/jboss-vfs/3.2.11.Final/jboss-vfs-3.2.11.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/net/sf/saxon/Saxon-HE/9.5.1-6/Saxon-HE-9.5.1-6.jar" sourcepath="M2_REPO/net/sf/saxon/Saxon-HE/9.5.1-6/Saxon-HE-9.5.1-6-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/net/sf/saxon/Saxon-HE/9.5.1-6/Saxon-HE-9.5.1-6-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/nux/nux/1.6/nux-1.6.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/vividsolutions/jts/1.13/jts-1.13.jar" sourcepath="M2_REPO/com/vividsolutions/jts/1.13/jts-1.13-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/com/vividsolutions/jts/1.13/jts-1.13-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/wololo/jts2geojson/0.7.0/jts2geojson-0.7.0.jar" sourcepath="M2_REPO/org/wololo/jts2geojson/0.7.0/jts2geojson-0.7.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/wololo/jts2geojson/0.7.0/jts2geojson-0.7.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.6.3/jackson-databind-2.6.3.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.6.3/jackson-databind-2.6.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.6.3/jackson-databind-2.6.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.6.3/jackson-annotations-2.6.3.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.6.3/jackson-annotations-2.6.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.3/jackson-annotations-2.6.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.6.3/jackson-core-2.6.3.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.6.3/jackson-core-2.6.3-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.3/jackson-core-2.6.3-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/osgeo/proj4j/0.1.0/proj4j-0.1.0.jar" sourcepath="M2_REPO/org/osgeo/proj4j/0.1.0/proj4j-0.1.0-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/osgeo/proj4j/0.1.0/proj4j-0.1.0-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/com/io7m/xom/xom/1.2.10/xom-1.2.10.jar" sourcepath="M2_REPO/com/io7m/xom/xom/1.2.10/xom-1.2.10-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/com/io7m/xom/xom/1.2.10/xom-1.2.10-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0.jar" sourcepath="M2_REPO/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/xalan/xalan/2.7.0/xalan-2.7.0.jar" sourcepath="M2_REPO/xalan/xalan/2.7.0/xalan-2.7.0-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/jaxen/jaxen/1.1.6/jaxen-1.1.6.jar" sourcepath="M2_REPO/jaxen/jaxen/1.1.6/jaxen-1.1.6-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/jaxen/jaxen/1.1.6/jaxen-1.1.6-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/io/netty/netty-all/4.0.32.Final/netty-all-4.0.32.Final.jar" sourcepath="M2_REPO/io/netty/netty-all/4.0.32.Final/netty-all-4.0.32.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/io/netty/netty-all/4.0.32.Final/netty-all-4.0.32.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/infinispan/infinispan-core/8.1.0.Final/infinispan-core-8.1.0.Final.jar" sourcepath="M2_REPO/org/infinispan/infinispan-core/8.1.0.Final/infinispan-core-8.1.0.Final-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/infinispan/infinispan-commons/8.1.0.Final/infinispan-commons-8.1.0.Final.jar" sourcepath="M2_REPO/org/infinispan/infinispan-commons/8.1.0.Final/infinispan-commons-8.1.0.Final-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/narayana/jta/narayana-jta/5.0.4.Final/narayana-jta-5.0.4.Final.jar" sourcepath="M2_REPO/org/jboss/narayana/jta/narayana-jta/5.0.4.Final/narayana-jta-5.0.4.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/narayana/jta/narayana-jta/5.0.4.Final/narayana-jta-5.0.4.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/marshalling/jboss-marshalling-river/1.4.10.Final/jboss-marshalling-river-1.4.10.Final.jar" sourcepath="M2_REPO/org/jboss/marshalling/jboss-marshalling-river/1.4.10.Final/jboss-marshalling-river-1.4.10.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/marshalling/jboss-marshalling-river/1.4.10.Final/jboss-marshalling-river-1.4.10.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/marshalling/jboss-marshalling/1.4.10.Final/jboss-marshalling-1.4.10.Final.jar" sourcepath="M2_REPO/org/jboss/marshalling/jboss-marshalling/1.4.10.Final/jboss-marshalling-1.4.10.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/marshalling/jboss-marshalling/1.4.10.Final/jboss-marshalling-1.4.10.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jgroups/jgroups/3.6.6.Final/jgroups-3.6.6.Final.jar" sourcepath="M2_REPO/org/jgroups/jgroups/3.6.6.Final/jgroups-3.6.6.Final-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/staxmapper/1.2.0.Final/staxmapper-1.2.0.Final.jar" sourcepath="M2_REPO/org/jboss/staxmapper/1.2.0.Final/staxmapper-1.2.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/staxmapper/1.2.0.Final/staxmapper-1.2.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/teiid/connectors/translator-object/9.1.0.Final/translator-object-9.1.0.Final.jar" sourcepath="M2_REPO/org/jboss/teiid/connectors/translator-object/9.1.0.Final/translator-object-9.1.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/teiid/connectors/translator-object/9.1.0.Final/translator-object-9.1.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/hibernate/hibernate-search-engine/5.5.1.Final/hibernate-search-engine-5.5.1.Final.jar" sourcepath="M2_REPO/org/hibernate/hibernate-search-engine/5.5.1.Final/hibernate-search-engine-5.5.1.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/hibernate/hibernate-search-engine/5.5.1.Final/hibernate-search-engine-5.5.1.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar" sourcepath="M2_REPO/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-core/5.3.1/lucene-core-5.3.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-core/5.3.1/lucene-core-5.3.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/apache/lucene/lucene-core/5.3.1/lucene-core-5.3.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-backward-codecs/5.3.1/lucene-backward-codecs-5.3.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-backward-codecs/5.3.1/lucene-backward-codecs-5.3.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/apache/lucene/lucene-backward-codecs/5.3.1/lucene-backward-codecs-5.3.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-misc/5.3.1/lucene-misc-5.3.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-misc/5.3.1/lucene-misc-5.3.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/apache/lucene/lucene-misc/5.3.1/lucene-misc-5.3.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-analyzers-common/5.3.1/lucene-analyzers-common-5.3.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-analyzers-common/5.3.1/lucene-analyzers-common-5.3.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/apache/lucene/lucene-analyzers-common/5.3.1/lucene-analyzers-common-5.3.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-facet/5.3.1/lucene-facet-5.3.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-facet/5.3.1/lucene-facet-5.3.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/apache/lucene/lucene-facet/5.3.1/lucene-facet-5.3.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-queries/5.3.1/lucene-queries-5.3.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-queries/5.3.1/lucene-queries-5.3.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/apache/lucene/lucene-queries/5.3.1/lucene-queries-5.3.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/teiid/connectors/translator-jdbc/9.1.0.Final/translator-jdbc-9.1.0.Final.jar" sourcepath="M2_REPO/org/jboss/teiid/connectors/translator-jdbc/9.1.0.Final/translator-jdbc-9.1.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/teiid/connectors/translator-jdbc/9.1.0.Final/translator-jdbc-9.1.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/hibernate/hibernate-core/5.0.9.Final/hibernate-core-5.0.9.Final.jar" sourcepath="M2_REPO/org/hibernate/hibernate-core/5.0.9.Final/hibernate-core-5.0.9.Final-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar" sourcepath="M2_REPO/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar" sourcepath="M2_REPO/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/antlr/antlr/2.7.7/antlr-2.7.7.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar" sourcepath="M2_REPO/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar" sourcepath="M2_REPO/dom4j/dom4j/1.6.1/dom4j-1.6.1-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar" sourcepath="M2_REPO/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/teiid/connectors/translator-file/9.1.0.Final/translator-file-9.1.0.Final.jar" sourcepath="M2_REPO/org/jboss/teiid/connectors/translator-file/9.1.0.Final/translator-file-9.1.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/teiid/connectors/translator-file/9.1.0.Final/translator-file-9.1.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/teiid/connectors/connector-file/9.1.0.Final/connector-file-9.1.0.Final.jar" sourcepath="M2_REPO/org/jboss/teiid/connectors/connector-file/9.1.0.Final/connector-file-9.1.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/teiid/connectors/connector-file/9.1.0.Final/connector-file-9.1.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/hornetq/hornetq-core/2.2.14.Final/hornetq-core-2.2.14.Final.jar" sourcepath="M2_REPO/org/hornetq/hornetq-core/2.2.14.Final/hornetq-core-2.2.14.Final-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.2_spec/1.0.0.Final/jboss-interceptors-api_1.2_spec-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.2_spec/1.0.0.Final/jboss-interceptors-api_1.2_spec-1.0.0.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.2_spec/1.0.0.Final/jboss-interceptors-api_1.2_spec-1.0.0.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/ironjacamar/ironjacamar-jdbc/1.0.30.Final/ironjacamar-jdbc-1.0.30.Final.jar" sourcepath="M2_REPO/org/jboss/ironjacamar/ironjacamar-jdbc/1.0.30.Final/ironjacamar-jdbc-1.0.30.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/ironjacamar/ironjacamar-jdbc/1.0.30.Final/ironjacamar-jdbc-1.0.30.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jboss-transaction-api_1.1_spec-1.0.1.Final.jar" sourcepath="M2_REPO/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jboss-transaction-api_1.1_spec-1.0.1.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.1_spec/1.0.1.Final/jboss-transaction-api_1.1_spec-1.0.1.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/ironjacamar/ironjacamar-core-api/1.0.30.Final/ironjacamar-core-api-1.0.30.Final.jar" sourcepath="M2_REPO/org/jboss/ironjacamar/ironjacamar-core-api/1.0.30.Final/ironjacamar-core-api-1.0.30.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/ironjacamar/ironjacamar-core-api/1.0.30.Final/ironjacamar-core-api-1.0.30.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/ironjacamar/ironjacamar-spec-api/1.0.30.Final/ironjacamar-spec-api-1.0.30.Final.jar" sourcepath="M2_REPO/org/jboss/ironjacamar/ironjacamar-spec-api/1.0.30.Final/ironjacamar-spec-api-1.0.30.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/ironjacamar/ironjacamar-spec-api/1.0.30.Final/ironjacamar-spec-api-1.0.30.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/jboss-transaction-spi/7.1.0.Final/jboss-transaction-spi-7.1.0.Final.jar" sourcepath="M2_REPO/org/jboss/jboss-transaction-spi/7.1.0.Final/jboss-transaction-spi-7.1.0.Final-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/logging/jboss-logging-spi/2.2.0.CR1/jboss-logging-spi-2.2.0.CR1.jar" sourcepath="M2_REPO/org/jboss/logging/jboss-logging-spi/2.2.0.CR1/jboss-logging-spi-2.2.0.CR1-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/spec/javax/resource/jboss-connector-api_1.5_spec/1.0.0.Final/jboss-connector-api_1.5_spec-1.0.0.Final.jar" sourcepath="M2_REPO/org/jboss/spec/javax/resource/jboss-connector-api_1.5_spec/1.0.0.Final/jboss-connector-api_1.5_spec-1.0.0.Final-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/threads/jboss-threads/2.0.0.GA/jboss-threads-2.0.0.GA.jar" sourcepath="M2_REPO/org/jboss/threads/jboss-threads/2.0.0.GA/jboss-threads-2.0.0.GA-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/ironjacamar/ironjacamar-core-impl/1.0.30.Final/ironjacamar-core-impl-1.0.30.Final.jar" sourcepath="M2_REPO/org/jboss/ironjacamar/ironjacamar-core-impl/1.0.30.Final/ironjacamar-core-impl-1.0.30.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/ironjacamar/ironjacamar-core-impl/1.0.30.Final/ironjacamar-core-impl-1.0.30.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/ironjacamar/ironjacamar-common-impl/1.0.30.Final/ironjacamar-common-impl-1.0.30.Final.jar" sourcepath="M2_REPO/org/jboss/ironjacamar/ironjacamar-common-impl/1.0.30.Final/ironjacamar-common-impl-1.0.30.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/ironjacamar/ironjacamar-common-impl/1.0.30.Final/ironjacamar-common-impl-1.0.30.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/ironjacamar/ironjacamar-common-api/1.0.30.Final/ironjacamar-common-api-1.0.30.Final.jar" sourcepath="M2_REPO/org/jboss/ironjacamar/ironjacamar-common-api/1.0.30.Final/ironjacamar-common-api-1.0.30.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/ironjacamar/ironjacamar-common-api/1.0.30.Final/ironjacamar-common-api-1.0.30.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/ironjacamar/ironjacamar-common-spi/1.0.30.Final/ironjacamar-common-spi-1.0.30.Final.jar" sourcepath="M2_REPO/org/jboss/ironjacamar/ironjacamar-common-spi/1.0.30.Final/ironjacamar-common-spi-1.0.30.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/ironjacamar/ironjacamar-common-spi/1.0.30.Final/ironjacamar-common-spi-1.0.30.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jboss/spec/javax/security/auth/message/jboss-jaspi-api_1.0_spec/1.0.1.Final/jboss-jaspi-api_1.0_spec-1.0.1.Final.jar" sourcepath="M2_REPO/org/jboss/spec/javax/security/auth/message/jboss-jaspi-api_1.0_spec/1.0.1.Final/jboss-jaspi-api_1.0_spec-1.0.1.Final-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jboss/spec/javax/security/auth/message/jboss-jaspi-api_1.0_spec/1.0.1.Final/jboss-jaspi-api_1.0_spec-1.0.1.Final-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jvnet/hyperjaxb3/hyperjaxb3-ejb-runtime/0.5.6/hyperjaxb3-ejb-runtime-0.5.6.jar" sourcepath="M2_REPO/org/jvnet/hyperjaxb3/hyperjaxb3-ejb-runtime/0.5.6/hyperjaxb3-ejb-runtime-0.5.6-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jvnet/hyperjaxb3/hyperjaxb3-ejb-runtime/0.5.6/hyperjaxb3-ejb-runtime-0.5.6-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/commons-lang/commons-lang/2.2/commons-lang-2.2.jar" sourcepath="M2_REPO/commons-lang/commons-lang/2.2/commons-lang-2.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/commons-lang/commons-lang/2.2/commons-lang-2.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.6.2/jaxb2-basics-runtime-0.6.2.jar" sourcepath="M2_REPO/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.6.2/jaxb2-basics-runtime-0.6.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/home/aarellan/.m2/repository/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.6.2/jaxb2-basics-runtime-0.6.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>

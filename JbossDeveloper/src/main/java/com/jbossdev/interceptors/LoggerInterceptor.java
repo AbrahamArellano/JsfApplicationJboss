@@ -1,5 +1,6 @@
 package com.jbossdev.interceptors;
 
+import java.io.Serializable;
 import java.lang.reflect.Method;
 
 import javax.interceptor.AroundInvoke;
@@ -10,8 +11,9 @@ import org.jboss.logging.Logger;
 
 @Logged
 @Interceptor
-public class LoggerInterceptor {
+public class LoggerInterceptor implements Serializable {
 
+	private static final long serialVersionUID = 1L;
 	private static final Logger logger = Logger.getLogger(LoggerInterceptor.class.getName());
 
 	@AroundInvoke
@@ -24,7 +26,7 @@ public class LoggerInterceptor {
 		}
 		String parameters = "";
 		parameters = extractParameters(ic, parameters);
-		 
+
 		logger.info("Executing method: " + simpleName + "." + method.getName() + parameters);
 		return ic.proceed();
 	}

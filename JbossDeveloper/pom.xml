@@ -30,7 +30,7 @@
 				<groupId>org.jboss.arquillian</groupId>
 				<artifactId>arquillian-bom</artifactId>
 				<version>1.0.0.Final</version>
-				<scope>import</scope>
+				<scope>provided</scope>
 				<type>pom</type>
 			</dependency>
 			<dependency>
@@ -38,7 +38,7 @@
 				<artifactId>arquillian-drone-bom</artifactId>
 				<version>1.0.0.Final</version>
 				<type>pom</type>
-				<scope>import</scope>
+				<scope>provided</scope>
 			</dependency>
 			<dependency>
                 <groupId>org.richfaces</groupId>
@@ -185,36 +185,37 @@
             <scope>test</scope>
         </dependency>
 
+		<!-- 
         <dependency>
             <groupId>org.jboss.arquillian.protocol</groupId>
             <artifactId>arquillian-protocol-servlet</artifactId>
             <scope>test</scope>
         </dependency>        
-        
+         -->
         
         <!-- TEIID Dependencies -->
 	    <dependency>
 	      <groupId>org.jboss.teiid</groupId>
 	      <artifactId>teiid-runtime</artifactId>
-	      <version>9.1.0.Final</version>
+	      <version>${version.teiid}</version>
 	    </dependency>
 
 	    <dependency>
 	      <groupId>org.jboss.teiid</groupId>
 	      <artifactId>teiid-admin</artifactId>
-	      <version>9.1.0.Final</version>
+	      <version>${version.teiid}</version>
 	    </dependency>
 	
 	    <dependency>
 	      <groupId>org.jboss.teiid.connectors</groupId>
 	      <artifactId>translator-object</artifactId>
-	      <version>9.1.0.Final</version>
+	      <version>${version.teiid}</version>
 	    </dependency>        
 
 	    <dependency>
 	      <groupId>org.jboss.teiid.connectors</groupId>
 	      <artifactId>translator-jdbc</artifactId>
-	      <version>9.1.0.Final</version>
+	      <version>${version.teiid}</version>
 	    </dependency>
 
 		<dependency>
@@ -301,7 +302,14 @@
 					</archive>
 				</configuration>
 			</plugin>
-	      
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-eclipse-plugin</artifactId>
+                <configuration>
+                    <downloadSources>true</downloadSources>
+                    <downloadJavadocs>true</downloadJavadocs>
+                </configuration>
+            </plugin>	      
 		</plugins>
 	</build>
   
