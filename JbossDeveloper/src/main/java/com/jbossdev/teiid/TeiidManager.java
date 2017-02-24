@@ -46,7 +46,8 @@ public class TeiidManager {
 		URL newurl = new URL(rawPath);
 		embeddedServer.deployVDBZip(newurl);
 
-		// hibernate load
+		// hibernate loading
+
 	}
 
 	@PreDestroy

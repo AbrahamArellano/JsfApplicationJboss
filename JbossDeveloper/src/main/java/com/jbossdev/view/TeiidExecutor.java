@@ -5,6 +5,7 @@ import static com.jbossdev.jdbc.JDBCUtils.executeGetString;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.logging.Logger;
 
 import javax.ejb.Stateful;
@@ -18,7 +19,9 @@ import org.teiid.dqp.internal.datamgr.ConnectorManagerRepository.ConnectorManage
 import org.teiid.runtime.EmbeddedServer;
 import org.teiid.translator.TranslatorException;
 
+import com.jbossdev.beans.TeamObject;
 import com.jbossdev.interceptors.Logged;
+import com.jbossdev.jpa.teiid.TeamDao;
 
 @Named
 @Stateful
@@ -32,6 +35,9 @@ public class TeiidExecutor {
 
 	@Inject
 	private transient EmbeddedServer embeddedServer;
+
+	@Inject
+	private TeamDao teamDao;
 
 	private String federatedView;
 	private String jobType;
@@ -59,8 +65,16 @@ public class TeiidExecutor {
 	private void objectVdb() throws VirtualDatabaseException, ConnectorManagerException, TranslatorException,
 			IOException, InterruptedException, SQLException, Exception {
 
+		/*
+		 * JPA usage
+		 */
 		Connection connection = embeddedServer.getDriver().connect("jdbc:teiid:objectExampleVDB", null);
-		result = executeGetString(connection, "SELECT * from Team", false);
+
+		List<TeamObject> listOfTeams = teamDao.getListOfTeams(connection);
+
+		// result = executeGetString(connection, "SELECT * from Team", false);
+
+		result = listOfTeams.toString();
 
 		logger.info(result);
 	}
